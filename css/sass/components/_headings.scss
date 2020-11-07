@@ -1,0 +1,79 @@
+/* start header head */
+
+header {
+    .head-info {
+        h1 {
+            line-height: 1.5;
+        }
+    }
+}
+
+
+/* end header head */
+
+
+/* start about-us head */
+
+.about-us {
+    .about-info {
+        h2 {
+            @include mainHeading;
+        }
+    }
+}
+
+
+/* end about-us head*/
+
+
+/* start services head */
+
+.services {
+    h2 {
+        @include mainHeading;
+    }
+}
+
+
+/* end services head */
+
+
+/* start employ-form head */
+
+.emp-details {
+    h2 {
+        @include mainHeading;
+    }
+}
+
+
+/* end employ-form head */
+
+
+/* start footer headings */
+
+footer {
+    h3 {
+        margin-bottom: 30px;
+        color: $mainBackground;
+        font: {
+            weight: $veryBold;
+        }
+    }
+}
+
+
+/* end footer headings */
+
+///////////////////////////////// follow /////////////////////////////////
+
+/* start head heading */
+
+.head {
+    h2 {
+        @include followHeading;
+    }
+}
+
+
+/* end head heading */

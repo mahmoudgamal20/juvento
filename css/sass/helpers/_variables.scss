@@ -1,0 +1,41 @@
+/* colors */
+
+$mainBackground:#ffffff;
+$headerBackground:#5952e3;
+$secColor:#51d0cf;
+$shadowColor:#eff7fe;
+$dropColor:#dddddd;
+$pColor:#777;
+$darkColor:#131923;
+
+/* font-family */
+
+$mainFont:"Almarai";
+$secFont:"Cairo";
+$thirdFont:"Syne Tactile";
+
+/* font-weight */
+
+$semiBold:600;
+$veryBold:900;
+
+/* margin */
+
+$mainMargin:150px;
+
+/* dropshadow */
+
+$dropShadow:drop-shadow(0px 0px 20px rgba($dropColor, 0.5));
+
+/* transition */
+
+$transition3s:all 0.3s ease-in-out;
+
+/* media queries */
+
+$phone:320px;
+$small:500px;
+$medium:576px;
+$maxMed:768px;
+$large:992px;
+$xLarge:1200px;

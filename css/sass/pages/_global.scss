@@ -1,0 +1,206 @@
+/* start global */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $mainFont;
+    background: $shadowColor;
+}
+
+h1 {
+    @media(min-width: $phone)and(max-width: $small) {
+        font: {
+            size: 35px;
+        }
+    }
+}
+
+
+/* start modal */
+
+.modal {
+    .modal-title {
+        color: $darkColor;
+        font: {
+            weight: $semiBold;
+        }
+    }
+    .close {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+    }
+    .modal-body {
+        .form-group {
+            .form-control {
+                background: $dropColor;
+                padding: 10px 15px;
+                border-radius: 35px;
+                color: $darkColor;
+                margin-bottom: 20px;
+                font: {
+                    family: $secFont;
+                }
+                &:focus {
+                    box-shadow: none;
+                    border: 1px solid $headerBackground;
+                }
+            }
+             ::-webkit-input-placeholder {
+                color: $darkColor;
+            }
+            select {
+                padding: 3px 10px !important;
+            }
+        }
+    }
+    .btn {
+        // styled in buttons sheet
+    }
+}
+
+
+/* start whatsapp */
+
+.whatsapp {
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    &:hover .whats-info {
+        display: block;
+    }
+    img {
+        position: fixed;
+        bottom: 10%;
+        left: 9%;
+    }
+    .whats-info {
+        position: fixed;
+        bottom: 4%;
+        left: 1%;
+        background: #00CC71;
+        padding: 10px 15px;
+        border-radius: 15px;
+        display: none;
+        a {
+            color: $mainBackground;
+            font: {
+                weight: $semiBold;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+/* start scrollup */
+
+.scrollup {
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: $headerBackground;
+    color: $mainBackground;
+    border-radius: 5px;
+    filter: drop-shadow(0px 0px 5px rgba($darkColor, 0.5));
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* start loader */
+
+.spinner {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $darkColor;
+    z-index: 9999;
+    .double-bounce1,
+    .double-bounce2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $secColor;
+        opacity: 0.6;
+        position: fixed;
+        top: 50%;
+        right: 50%;
+        animation: sk-bounce 2.0s infinite ease-in-out;
+    }
+    .double-bounce2 {
+        -webkit-animation-delay: -1.0s;
+        animation-delay: -1.0s;
+    }
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+/* start scrollbar */
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: rgba($secColor, 0.8);
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba($secColor, 1);
+}
+
+
+/* end global */

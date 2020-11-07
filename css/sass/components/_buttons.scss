@@ -1,0 +1,85 @@
+/* start navbar */
+
+.navbar {
+    form {
+        @media(min-width: $phone)and(max-width: $large) {
+            margin-right: 20px;
+        }
+        .btn {
+            @include navButton;
+        }
+    }
+}
+
+
+/* end navbar */
+
+
+/* start header btn */
+
+header {
+    .head-info {
+        .btn {
+            @include headButton;
+        }
+    }
+}
+
+
+/* end header btn */
+
+
+/* start employ-form btn */
+
+.emp-details {
+    form {
+        .btn {
+            background: $headerBackground;
+            color: $mainBackground;
+            padding: 20px;
+            border-radius: 35px;
+            opacity: 0.9;
+            transition: $transition3s;
+            width: 100%;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+/* end employ-form btn */
+
+
+/* start offer */
+
+.offer {
+    .media-btn {
+        text-align: left !important;
+        @media(min-width: $phone)and(max-width: $medium) {
+            text-align: right !important;
+        }
+        .btn {
+            @include offerButton;
+        }
+    }
+}
+
+
+/* end offer */
+
+
+/* start modal */
+
+.modal {
+    .btn {
+        background: $headerBackground;
+        color: $mainBackground;
+        padding: 10px 15px;
+        border-radius: 35px;
+    }
+}
+
+
+/* end modal  */

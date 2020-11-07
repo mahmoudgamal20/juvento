@@ -1,0 +1,35 @@
+/* start follow-nav */
+
+.follow-nav {
+    background: $headerBackground;
+}
+
+
+/* end follow-nav */
+
+
+/* start head */
+
+.head {
+    padding-top: $mainMargin/3;
+    h2 {
+        // styled in headings sheet
+    }
+}
+
+
+/* end head */
+
+
+/* start follow-offer */
+
+.follow-offer {
+    margin-top: 5%;
+    padding-bottom: $mainMargin/3;
+    .emp-img {
+        margin-top: 0;
+    }
+}
+
+
+/* end follow-offer */

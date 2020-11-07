@@ -1,0 +1,97 @@
+/* start footer */
+
+footer {
+    padding-top: $mainMargin;
+    background: $headerBackground;
+    color: $mainBackground;
+    @media(min-width: $phone)and(max-width: $small) {
+        padding-top: $mainMargin/3;
+        margin-top: $mainMargin/2;
+    }
+    .col-sm-12 {
+        margin-bottom: 30px;
+    }
+    .list-unstyled {
+        padding-right: 0;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .footer-brand {
+        a {
+            @include navBrand;
+        }
+        p {
+            @include footerParagraph;
+        }
+    }
+    .quick-links {
+        ul {
+            li {
+                a {
+                    color: $mainBackground;
+                    transition: $transition3s;
+                    &:hover {
+                        text-decoration: none;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+        li {
+            .media {
+                font: {
+                    family: $secFont;
+                }
+                .media-body {
+                    margin-right: 10px;
+                    cursor: pointer;
+                    transition: $transition3s;
+                    &:hover {
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .follow-us {
+        i {
+            margin-left: 5px;
+            cursor: pointer;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            background: $mainBackground;
+            color: $headerBackground;
+            transition: $transition3s;
+            &:hover {
+                background: $darkColor;
+            }
+            // &:hover .fa-facebook-f {
+            //     color: #4267B2;
+            // }
+            // &:hover .fa-twitter {
+            //     color: #1DA1F2;
+            // }
+            // &:hover .fa-whatsapp {
+            //     color: #25D366;
+            // }
+            // &:hover .fa-instagram {
+            //     color: #833AB4;
+            // }
+        }
+    }
+    .copyright {
+        padding-bottom: 30px;
+        font: {
+            size: 18px;
+            family: $secFont;
+        }
+    }
+}
+
+
+/* end footer */

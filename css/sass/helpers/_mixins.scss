@@ -1,0 +1,164 @@
+/* navbar brand */
+
+@mixin navBrand {
+    color: $mainBackground;
+    font: {
+        size: 30px;
+        weight: $semiBold;
+        family: $thirdFont;
+    }
+    &:hover {
+        color: $darkColor;
+    }
+}
+
+
+/* nav button */
+
+@mixin navButton {
+    background: transparent;
+    color: $mainBackground;
+    border: 1px solid $mainBackground;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: $transition3s;
+    font: {
+        weight: $semiBold;
+        family: $secFont;
+    }
+    &:hover {
+        background: $mainBackground;
+        color: $headerBackground;
+    }
+}
+
+
+/* head button */
+
+@mixin headButton {
+    background: $mainBackground;
+    color: $headerBackground;
+    padding: 15px 50px;
+    border-radius: 50px;
+    letter-spacing: 1.5px;
+    transition: $transition3s;
+    filter: $dropShadow;
+    font: {
+        size: 17px;
+        weight: $semiBold;
+        family: $secFont;
+    }
+}
+
+
+/* main heading */
+
+@mixin mainHeading {
+    color: $headerBackground;
+    font: {
+        weight: $veryBold;
+    }
+}
+
+
+/* main span */
+
+@mixin mainSpan {
+    color: $pColor;
+    font: {
+        family: $secFont;
+        weight: $semiBold;
+    }
+}
+
+
+/* main background */
+
+@mixin mainParent {
+    position: relative;
+    top: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: $mainBackground;
+    padding: 10px 20px;
+    transition: $transition3s;
+    filter: $dropShadow;
+}
+
+
+/* main parent */
+
+@mixin mainParent2 {
+    position: relative;
+    top: 0;
+    margin-top: 30px;
+    border-radius: 10px;
+    background: $mainBackground;
+    padding: 25px;
+    transition: $transition3s;
+    filter: $dropShadow;
+}
+
+
+/* main paragraph */
+
+@mixin mainParagraph {
+    margin: 30px 0;
+    color: $pColor;
+    line-height: 1.8;
+    font: {
+        family: $mainFont;
+        weight: $semiBold;
+        size: 18px;
+    }
+}
+
+
+/* second paragraph */
+
+@mixin secParagraph {
+    color: $pColor;
+    font: {
+        size: 15px;
+    }
+}
+
+
+/* offer button */
+
+@mixin offerButton {
+    background: $headerBackground;
+    color: $mainBackground;
+    border: 1px solid $mainBackground;
+    border-radius: 50px;
+    padding: 10px 20px;
+    filter: $dropShadow;
+    font: {
+        weight: $semiBold;
+        family: $secFont;
+    }
+}
+
+
+/* footer paragaph */
+
+@mixin footerParagraph {
+    margin: 20px 0;
+    color: $shadowColor;
+    line-height: 1.8;
+    font: {
+        family: $secFont;
+        size: 15px;
+    }
+}
+
+//////////////// follow  ////////////////
+
+/* follow head */
+
+@mixin followHeading {
+    color: $headerBackground;
+    font: {
+        weight: $veryBold;
+    }
+}

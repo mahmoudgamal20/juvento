@@ -1,0 +1,202 @@
+/* start navbar */
+
+.navbar {
+    padding: 20px !important;
+    background: transparent;
+    z-index: 999;
+    .navbar-brand {
+        @include navBrand;
+    }
+    .navbar-toggler {
+        border: 1px solid rgba($mainBackground, 0.4);
+        .navbar-toggler-icon {
+            background-image: url(../img/menu-bar.svg);
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            margin-left: 20px;
+            @media(min-width: $phone)and(max-width: $large) {
+                margin-bottom: 10px;
+            }
+            .nav-link {
+                position: relative;
+                color: $mainBackground;
+                transition: $transition3s;
+                display: inline-block;
+                font: {
+                    weight: $semiBold;
+                }
+                &:hover span {
+                    width: 100%;
+                }
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 0%;
+                    height: 3px;
+                    border-radius: 10px;
+                    background: $mainBackground;
+                    transition: $transition3s;
+                }
+            }
+        }
+    }
+    form {
+        .btn {
+            // styled in buttons sheet
+        }
+    }
+}
+
+
+/* end navbar */
+
+
+/* start about-us */
+
+.about-us {
+    margin-top: $mainMargin;
+    .about-info {
+        h2 {
+            // styles in headings sheet
+        }
+        p {
+            @include mainParagraph;
+        }
+    }
+}
+
+
+/* end about-us */
+
+
+/* start services */
+
+.services {
+    margin-top: $mainMargin/2;
+    padding: $mainMargin/3 0;
+    background: $shadowColor;
+    h2 {
+        // styled in headings sheet
+    }
+    span {
+        @include mainSpan;
+    }
+    .service-info {
+        @include mainParent;
+        &:hover {
+            top: -10px;
+        }
+        img {}
+        h5 {
+            color: $headerBackground;
+            font: {
+                family: $secFont;
+                weight: $semiBold;
+            }
+        }
+        p {
+            @include secParagraph;
+        }
+    }
+}
+
+
+/* end services */
+
+
+/* start employ-form */
+
+.emp-details {
+    margin-top: $mainMargin;
+    position: relative;
+    overflow: hidden;
+    img {
+        position: absolute;
+        width: 700px;
+        bottom: 0;
+        left: -28px;
+        z-index: -1;
+        @media(min-width: $phone)and(max-width: $xLarge) {
+            display: none;
+        }
+    }
+    h2 {
+        // styled in heading sheet
+    }
+    span {
+        @include mainSpan;
+    }
+    .emp-form {
+        @include mainParent2;
+        form {
+            margin: 20px;
+            .form-group {
+                .form-control {
+                    background: $dropColor;
+                    padding: 30px 25px;
+                    border-radius: 35px;
+                    color: $darkColor;
+                    margin-bottom: 20px;
+                    font: {
+                        family: $secFont;
+                    }
+                    &:focus {
+                        box-shadow: none;
+                        border: 1px solid $headerBackground;
+                    }
+                }
+                 ::-webkit-input-placeholder {
+                    color: $pColor;
+                }
+            }
+            .btn {
+                // styled in buttons sheet
+            }
+        }
+    }
+    .emp-img {
+        margin-top: 20%;
+    }
+}
+
+
+/* end employ-form */
+
+
+/* start offer */
+
+.offer {
+    margin-top: $mainMargin/2;
+    position: relative;
+    top: 4rem;
+    @media(min-width: $phone)and(max-width: $small) {
+        display: none;
+    }
+    .media {
+        background: $shadowColor;
+        filter: $dropShadow;
+        padding: 25px;
+        border-radius: 25px;
+        .media-body {
+            margin-right: 25px;
+            h5 {
+                @include mainHeading;
+            }
+            p {
+                margin: 30px 0;
+                color: $pColor;
+                font: {
+                    family: $secFont;
+                    weight: $semiBold;
+                    size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+/* end offer */
